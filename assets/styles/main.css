@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 580px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid #cccc;
+
+  &>h1 {
+    font-size: 38px;
+    color: #202020;
+  }
+
+  &>div.options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &>div.options > a.link-download {
+    text-decoration: none;
+  }
+
+  &>div.options > a.link-download > button.download-onemonitor {
+    font-family: 'Albert Sans', 'Helvetica', 'Arial', sans-serif;
+    border: 1px solid rgb(174, 130, 214);
+    ;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    background-color: rgb(197, 152, 238);
+    color: #ffff;
+    justify-content: center;
+    transition: background 0.2s ease-in-out;
+    margin: 16px auto;
+
+    &:hover {
+      background-color: rgb(174, 130, 214);
+    }
+
+    &>a > i { color: #ffff; }
+  }
+
+  &>div.options > a.link-github {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 6px;
+  }
+}
+
+main {
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #cccc;
+
+  &>h2.installation-steps-title, h2.faq-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &>ul.installation-list-steps, ul.faq-questions {
+    list-style-type: square;
+    margin-top: 10px;
+    margin-left: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &>div.faq {
+    margin-top: 16px;
+  }
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+
+  &>a.link-credits {
+    text-decoration: none;
+  }
+}
