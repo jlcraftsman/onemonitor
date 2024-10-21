@@ -1,4 +1,5 @@
 import Faq from "./FaqComponent.js";
+import Feedback from "./FeedbackComponent.js";
 
 const InstructionInstallation = {
   view: function () {
@@ -13,7 +14,8 @@ const InstructionInstallation = {
         m('li', 'Enable developer mode on the extensions page.'),
         m('li', 'Drag the onemonitor-extension.crx file to the extensions screen.')
       ]),
-      Faq.view()
+      Faq.view(),
+      Feedback.view(),
     ])
   }
 }

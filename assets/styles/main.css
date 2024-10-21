@@ -27,11 +27,11 @@
     align-items: center;
   }
 
-  &>div.options > a.link-download {
+  &>div.options>a.link-download {
     text-decoration: none;
   }
 
-  &>div.options > a.link-download > button.download-onemonitor {
+  &>div.options>a.link-download>button.download-onemonitor {
     font-family: 'Albert Sans', 'Helvetica', 'Arial', sans-serif;
     border: 1px solid rgb(174, 130, 214);
     ;
@@ -54,10 +54,12 @@
       background-color: rgb(174, 130, 214);
     }
 
-    &>a > i { color: #ffff; }
+    &>a>i {
+      color: #ffff;
+    }
   }
 
-  &>div.options > a.link-github {
+  &>div.options>a.link-github {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -70,13 +72,15 @@ main {
   margin-top: 10px;
   border-bottom: 1px solid #cccc;
 
-  &>h2.installation-steps-title, h2.faq-title {
+  &>h2.installation-steps-title,
+  h2.faq-title {
     display: flex;
     align-items: center;
     gap: 6px;
   }
 
-  &>ul.installation-list-steps, ul.faq-questions {
+  &>ul.installation-list-steps,
+  ul.faq-questions {
     list-style-type: square;
     margin-top: 10px;
     margin-left: 16px;
@@ -88,6 +92,33 @@ main {
 
   &>div.faq {
     margin-top: 16px;
+  }
+
+  &>div.feedback-blocks {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+
+    &>div.feedback-block {
+      margin-top: 16px;
+      border: 1px solid #cccc;
+      padding: 6px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+      &>div.feedback-comment {
+        margin-top: 10px;
+      }
+    }
+
+    &>div.feedback-block>div.feedback-person {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      &>img {
+        border-radius: 5px;
+      }
+    }
   }
 }
 
