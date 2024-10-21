@@ -98,6 +98,8 @@ main {
     margin-top: 16px;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid #cccc;
+    padding-top: 10px;
 
     &>div.feedback-block {
       margin-top: 16px;
